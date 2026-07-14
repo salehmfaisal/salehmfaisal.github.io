@@ -521,6 +521,7 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: repeat(2, 1fr);
   gap: 34px 56px;
 }
+.skillgroup--wide { grid-column: 1 / -1; }
 .skillgroup h3 {
   font-family: var(--font-serif);
   font-size: 1.15rem;
@@ -612,8 +613,8 @@ a { color: inherit; text-decoration: none; }
   list-style: none;
 }
 .pub__more summary::-webkit-details-marker { display: none; }
-.pub__more summary::before { content: "+ "; }
-.pub__more[open] summary::before { content: "– "; }
+.pub__more summary::before { content: "\25B8  "; }
+.pub__more[open] summary::before { content: "\25BE  "; }
 .publist--compact { margin-top: 12px; gap: 14px; }
 .publist--compact li {
   padding: 0 0 14px;
